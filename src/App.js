@@ -26,8 +26,10 @@ class App extends React.Component{
     console.log("Called filter price!");
     console.log(typeof this.state.minPrice);
     console.log(this.state.minPrice);
-    // if(this.state.minPrice === "") return true;
-    // if(!(this.state.maxPrice === "")) return true;
+    if(String(this.state.minPrice).length === 0) return true;
+    else if(String(this.state.minPrice).length === 0) return true;
+    else if(this.state.minPrice === -1) return true;
+    else if(this.state.maxPrice === -1) return true;
     return ((vehicle.price >= this.state.minPrice && vehicle.price <= this.state.maxPrice)) ? true: false;
   }
 
