@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4f169f7fc578ed559a5e73ac465d55ef",
+    "revision": "1a3edee1241b29e5976eac49304bfd06",
     "url": "/star_cars/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/star_cars/static/css/2.eb45ad44.chunk.css"
   },
   {
-    "revision": "ad32f7d97ee7d072fe87",
+    "revision": "29a7d65cf67e3ffb07b7",
     "url": "/star_cars/static/css/main.a2d70a1e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/star_cars/static/js/2.1333af49.chunk.js.LICENSE"
   },
   {
-    "revision": "ad32f7d97ee7d072fe87",
-    "url": "/star_cars/static/js/main.c6076988.chunk.js"
+    "revision": "29a7d65cf67e3ffb07b7",
+    "url": "/star_cars/static/js/main.c53139aa.chunk.js"
   },
   {
     "revision": "40a6dcc169173072d8b6",

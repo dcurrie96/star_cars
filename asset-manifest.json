@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/star_cars/static/css/main.a2d70a1e.chunk.css",
-    "main.js": "/star_cars/static/js/main.c6076988.chunk.js",
-    "main.js.map": "/star_cars/static/js/main.c6076988.chunk.js.map",
+    "main.js": "/star_cars/static/js/main.c53139aa.chunk.js",
+    "main.js.map": "/star_cars/static/js/main.c53139aa.chunk.js.map",
     "runtime-main.js": "/star_cars/static/js/runtime-main.8d2a95f0.js",
     "runtime-main.js.map": "/star_cars/static/js/runtime-main.8d2a95f0.js.map",
     "static/css/2.eb45ad44.chunk.css": "/star_cars/static/css/2.eb45ad44.chunk.css",
     "static/js/2.1333af49.chunk.js": "/star_cars/static/js/2.1333af49.chunk.js",
     "static/js/2.1333af49.chunk.js.map": "/star_cars/static/js/2.1333af49.chunk.js.map",
     "index.html": "/star_cars/index.html",
-    "precache-manifest.7efe8608351bdfc4fdcc731cea20680d.js": "/star_cars/precache-manifest.7efe8608351bdfc4fdcc731cea20680d.js",
+    "precache-manifest.4942519cf68fa8100237e2ee6269825d.js": "/star_cars/precache-manifest.4942519cf68fa8100237e2ee6269825d.js",
     "service-worker.js": "/star_cars/service-worker.js",
     "static/css/2.eb45ad44.chunk.css.map": "/star_cars/static/css/2.eb45ad44.chunk.css.map",
     "static/css/main.a2d70a1e.chunk.css.map": "/star_cars/static/css/main.a2d70a1e.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.eb45ad44.chunk.css",
     "static/js/2.1333af49.chunk.js",
     "static/css/main.a2d70a1e.chunk.css",
-    "static/js/main.c6076988.chunk.js"
+    "static/js/main.c53139aa.chunk.js"
   ]
 }
