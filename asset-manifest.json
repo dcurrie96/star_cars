@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/dcurrie96/star_cars/static/css/main.e4d33c18.chunk.css",
+    "main.js": "/dcurrie96/star_cars/static/js/main.8d90f205.chunk.js",
+    "main.js.map": "/dcurrie96/star_cars/static/js/main.8d90f205.chunk.js.map",
+    "runtime-main.js": "/dcurrie96/star_cars/static/js/runtime-main.6071cbda.js",
+    "runtime-main.js.map": "/dcurrie96/star_cars/static/js/runtime-main.6071cbda.js.map",
+    "static/css/2.eb45ad44.chunk.css": "/dcurrie96/star_cars/static/css/2.eb45ad44.chunk.css",
+    "static/js/2.1333af49.chunk.js": "/dcurrie96/star_cars/static/js/2.1333af49.chunk.js",
+    "static/js/2.1333af49.chunk.js.map": "/dcurrie96/star_cars/static/js/2.1333af49.chunk.js.map",
+    "index.html": "/dcurrie96/star_cars/index.html",
+    "precache-manifest.c7baf62d51d1a8f17b679ac251ccb633.js": "/dcurrie96/star_cars/precache-manifest.c7baf62d51d1a8f17b679ac251ccb633.js",
+    "service-worker.js": "/dcurrie96/star_cars/service-worker.js",
+    "static/css/2.eb45ad44.chunk.css.map": "/dcurrie96/star_cars/static/css/2.eb45ad44.chunk.css.map",
+    "static/css/main.e4d33c18.chunk.css.map": "/dcurrie96/star_cars/static/css/main.e4d33c18.chunk.css.map",
+    "static/js/2.1333af49.chunk.js.LICENSE": "/dcurrie96/star_cars/static/js/2.1333af49.chunk.js.LICENSE",
+    "static/media/Starjout.ttf": "/dcurrie96/star_cars/static/media/Starjout.f72f509a.ttf",
+    "static/media/logo.svg": "/dcurrie96/star_cars/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6071cbda.js",
+    "static/css/2.eb45ad44.chunk.css",
+    "static/js/2.1333af49.chunk.js",
+    "static/css/main.e4d33c18.chunk.css",
+    "static/js/main.8d90f205.chunk.js"
+  ]
+}
