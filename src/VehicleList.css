@@ -1,0 +1,13 @@
+/* .cardContain{
+  display: flex;
+  background-color: blue;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
+
+.cardContain{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 10px;
+}
