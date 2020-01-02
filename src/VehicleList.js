@@ -4,8 +4,6 @@ import { images } from './vehImages';
 import './VehicleList.css';
 
 const VehicleList=({ vehicles })=>{
-  console.log("Here are the vehicles in vehicle list:");
-  console.log(vehicles);
   return(
     <div className='cardContain'>
     {
