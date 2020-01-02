@@ -21,25 +21,27 @@ class App extends React.Component{
       maxPrice: -1,
       minPassenger: -1,
       maxPassenger: -1,
+      minFreight: -1,
+      maxFreight: -1,
       search: ''
     }
   }
+  filterGeneric = (quantParam, stateParamMin, stateParamMax) => {
+    if(String(stateParamMin).length === 0) return true;
+    else if(String(stateParamMax).length === 0) return true;
+    else if(stateParamMin === -1) return true;
+    else if(stateParamMin === -1) return true;
+    return ((quantParam >= stateParamMin && quantParam <= stateParamMax)) ? true: false;
+  }
 
   filterPrice = (vehicle) =>{
-    if(String(this.state.minPrice).length === 0) return true;
-    else if(String(this.state.maxPrice).length === 0) return true;
-    else if(this.state.minPrice === -1) return true;
-    else if(this.state.maxPrice === -1) return true;
-    return ((vehicle.price >= this.state.minPrice && vehicle.price <= this.state.maxPrice)) ? true: false;
+    return this.filterGeneric(vehicle.price, this.state.minPrice, this.state.maxPrice);
   }
   filterPassenger = (vehicle) =>{
-    const capacity = Number(vehicle.passengers) + Number(vehicle.crew);
-    console.log(`In filter passenger. Capacity is ${Number(vehicle.passengers) + Number(vehicle.crew)}`);
-    if(String(this.state.minPassenger).length === 0) return true;
-    else if(String(this.state.maxPassenger).length === 0) return true;
-    else if(this.state.minPassenger === -1) return true;
-    else if(this.state.maxPassenger === -1) return true;
-    return ((capacity >= this.state.minPassenger && capacity <= this.state.maxPassenger)) ? true: false;
+    return this.filterGeneric(Number(vehicle.passengers) + Number(vehicle.crew), this.state.minPassenger, this.state.maxPassenger);
+  }
+  filterFreight = (vehicle)=>{
+    return this.filterGeneric(Number(vehicle.capacity), this.state.minFreight, this.state.maxFreight);
   }
   filterName = (vehicle) =>{
     // console.log("Called filter name!");
@@ -48,18 +50,16 @@ class App extends React.Component{
 
   onMinPriceChange = (event) => {
       this.setState({minPrice: event.target.value});
-
-      console.log(`Here is the min price: ${event.target.value}`);
-      console.log(typeof event.target.value);
-      //console.log(filteredBots)
   }
 
   onMaxPriceChange = (event) => {
       this.setState({maxPrice: event.target.value});
-
-      console.log(`Here is the max price: ${event.target.value}`);
-      console.log(typeof event.target.value);
-
+  }
+  changeFreightMin = (event)=>{
+    this.setState({minFreight: event.target.value});
+  }
+  changeFreightMax = (event)=>{
+    this.setState({maxFreight: event.target.value});
   }
 
   changePassengerMin = (event) => {
@@ -96,13 +96,13 @@ class App extends React.Component{
   render(){
     const filteredVehicles = this.state.vehicles.filter((vehicle) => {
       //Remember, these filter functions return booleans!
-      return (this.filterPrice(vehicle) && this.filterName(vehicle) && this.filterPassenger(vehicle));
+      return (this.filterPrice(vehicle) && this.filterName(vehicle) && this.filterPassenger(vehicle) && this.filterFreight(vehicle));
     });
     return (
       <div>
         <h1>Star Dealership</h1>
         <div className="App mainLayout">
-          <SideBar changeSearch={this.changeSearch} minPass={this.changePassengerMin} maxPass={this.changePassengerMax} minPrice={this.onMinPriceChange} maxPrice={this.onMaxPriceChange}/>
+          <SideBar changeSearch={this.changeSearch} minFreight={this.changeFreightMin} maxFreight={this.changeFreightMax} minPass={this.changePassengerMin} maxPass={this.changePassengerMax} minPrice={this.onMinPriceChange} maxPrice={this.onMaxPriceChange}/>
           <VehicleList vehicles = {filteredVehicles}/>
         </div>
       </div>
