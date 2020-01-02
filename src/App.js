@@ -18,19 +18,22 @@ class App extends React.Component{
         "https://swapi.co/api/vehicles/?page=4"
       ],
       minPrice: -1,
-      maxPrice: -1
+      maxPrice: -1,
+      search: ''
     }
   }
 
   filterPrice = (vehicle) =>{
-    console.log("Called filter price!");
-    console.log(typeof this.state.minPrice);
-    console.log(this.state.minPrice);
     if(String(this.state.minPrice).length === 0) return true;
     else if(String(this.state.minPrice).length === 0) return true;
     else if(this.state.minPrice === -1) return true;
     else if(this.state.maxPrice === -1) return true;
     return ((vehicle.price >= this.state.minPrice && vehicle.price <= this.state.maxPrice)) ? true: false;
+  }
+  filterName = (vehicle) =>{
+    // console.log("Called filter name!");
+    console.log(`Here is the search query: ${this.state.search}`);
+    return vehicle.name.toLowerCase().includes(this.state.search);
   }
 
   onMinPriceChange = (event) => {
@@ -49,6 +52,9 @@ class App extends React.Component{
 
   }
 
+  changeSearch = (event) => {
+      this.setState({search: event.target.value.toLowerCase()});
+  }
   componentDidMount(){
 
     Promise.all(this.state.urls.map(url=>{
@@ -72,13 +78,14 @@ class App extends React.Component{
   }
   render(){
     const filteredVehicles = this.state.vehicles.filter((vehicle) => {
-      return this.filterPrice(vehicle);
+      //Remember, these filter functions return booleans!
+      return (this.filterPrice(vehicle) && this.filterName(vehicle));
     });
     return (
       <div>
         <h1>Star Dealership</h1>
         <div className="App mainLayout">
-          <SideBar minPrice={this.onMinPriceChange} maxPrice={this.onMaxPriceChange}/>
+          <SideBar changeSearch={this.changeSearch} minPrice={this.onMinPriceChange} maxPrice={this.onMaxPriceChange}/>
           <VehicleList vehicles = {filteredVehicles}/>
         </div>
       </div>
