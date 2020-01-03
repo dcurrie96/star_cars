@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import VehicleList from './VehicleList';
 import SideBar from './SideBar';
@@ -44,34 +43,16 @@ class App extends React.Component{
     return this.filterGeneric(Number(vehicle.capacity), this.state.minFreight, this.state.maxFreight);
   }
   filterName = (vehicle) =>{
-    // console.log("Called filter name!");
     return vehicle.name.toLowerCase().includes(this.state.search);
   }
 
-  onMinPriceChange = (event) => {
-      this.setState({minPrice: event.target.value});
+  changeGeneric = (val, myKey) => {
+      console.log(myKey);
+      let newState = {};
+      newState[myKey] = val;
+      this.setState(newState);
   }
 
-  onMaxPriceChange = (event) => {
-      this.setState({maxPrice: event.target.value});
-  }
-  changeFreightMin = (event)=>{
-    this.setState({minFreight: event.target.value});
-  }
-  changeFreightMax = (event)=>{
-    this.setState({maxFreight: event.target.value});
-  }
-
-  changePassengerMin = (event) => {
-    this.setState({minPassenger: event.target.value});
-  }
-  changePassengerMax = (event) => {
-    this.setState({maxPassenger: event.target.value});
-  }
-
-  changeSearch = (event) => {
-      this.setState({search: event.target.value.toLowerCase()});
-  }
   componentDidMount(){
 
     Promise.all(this.state.urls.map(url=>{
@@ -102,7 +83,7 @@ class App extends React.Component{
       <div>
         <h1>Star Dealership</h1>
         <div className="App mainLayout">
-          <SideBar changeSearch={this.changeSearch} minFreight={this.changeFreightMin} maxFreight={this.changeFreightMax} minPass={this.changePassengerMin} maxPass={this.changePassengerMax} minPrice={this.onMinPriceChange} maxPrice={this.onMaxPriceChange}/>
+          <SideBar changeGeneric={this.changeGeneric} minFreight={this.changeFreightMin} maxFreight={this.changeFreightMax} minPass={this.changePassengerMin} maxPass={this.changePassengerMax} minPrice={this.onMinPriceChange} maxPrice={this.onMaxPriceChange}/>
           <VehicleList vehicles = {filteredVehicles}/>
         </div>
       </div>
