@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "/star_cars/static/css/main.252c61b2.chunk.css",
-    "main.js": "/star_cars/static/js/main.8fbcfe7d.chunk.js",
-    "main.js.map": "/star_cars/static/js/main.8fbcfe7d.chunk.js.map",
+    "main.css": "/star_cars/static/css/main.e34313b4.chunk.css",
+    "main.js": "/star_cars/static/js/main.6b09684d.chunk.js",
+    "main.js.map": "/star_cars/static/js/main.6b09684d.chunk.js.map",
     "runtime-main.js": "/star_cars/static/js/runtime-main.8d2a95f0.js",
     "runtime-main.js.map": "/star_cars/static/js/runtime-main.8d2a95f0.js.map",
     "static/css/2.eb45ad44.chunk.css": "/star_cars/static/css/2.eb45ad44.chunk.css",
-    "static/js/2.1333af49.chunk.js": "/star_cars/static/js/2.1333af49.chunk.js",
-    "static/js/2.1333af49.chunk.js.map": "/star_cars/static/js/2.1333af49.chunk.js.map",
+    "static/js/2.95d4badc.chunk.js": "/star_cars/static/js/2.95d4badc.chunk.js",
+    "static/js/2.95d4badc.chunk.js.map": "/star_cars/static/js/2.95d4badc.chunk.js.map",
     "index.html": "/star_cars/index.html",
-    "precache-manifest.1129aca21d121108b32ee59eddc1b2a7.js": "/star_cars/precache-manifest.1129aca21d121108b32ee59eddc1b2a7.js",
+    "precache-manifest.c1221825ce74da39644b2c49db843408.js": "/star_cars/precache-manifest.c1221825ce74da39644b2c49db843408.js",
     "service-worker.js": "/star_cars/service-worker.js",
     "static/css/2.eb45ad44.chunk.css.map": "/star_cars/static/css/2.eb45ad44.chunk.css.map",
-    "static/css/main.252c61b2.chunk.css.map": "/star_cars/static/css/main.252c61b2.chunk.css.map",
-    "static/js/2.1333af49.chunk.js.LICENSE": "/star_cars/static/js/2.1333af49.chunk.js.LICENSE",
-    "static/media/Starjout.ttf": "/star_cars/static/media/Starjout.f72f509a.ttf",
-    "static/media/logo.svg": "/star_cars/static/media/logo.25bf045c.svg"
+    "static/css/main.e34313b4.chunk.css.map": "/star_cars/static/css/main.e34313b4.chunk.css.map",
+    "static/js/2.95d4badc.chunk.js.LICENSE": "/star_cars/static/js/2.95d4badc.chunk.js.LICENSE",
+    "static/media/Starjout.ttf": "/star_cars/static/media/Starjout.f72f509a.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.8d2a95f0.js",
     "static/css/2.eb45ad44.chunk.css",
-    "static/js/2.1333af49.chunk.js",
-    "static/css/main.252c61b2.chunk.css",
-    "static/js/main.8fbcfe7d.chunk.js"
+    "static/js/2.95d4badc.chunk.js",
+    "static/css/main.e34313b4.chunk.css",
+    "static/js/main.6b09684d.chunk.js"
   ]
 }
