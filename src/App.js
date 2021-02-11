@@ -11,10 +11,10 @@ class App extends React.Component{
     this.state = {
       vehicles: [],
       urls: [
-        "https://swapi.co/api/vehicles/?page=1",
-        "https://swapi.co/api/vehicles/?page=2",
-        "https://swapi.co/api/vehicles/?page=3",
-        "https://swapi.co/api/vehicles/?page=4"
+        "https://swapi.dev/api/vehicles/?page=1",
+        "https://swapi.dev/api/vehicles/?page=2",
+        "https://swapi.dev/api/vehicles/?page=3",
+        "https://swapi.dev/api/vehicles/?page=4"
       ],
       minPrice: -1,
       maxPrice: -1,
